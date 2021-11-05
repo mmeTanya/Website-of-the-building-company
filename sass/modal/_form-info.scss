@@ -1,0 +1,142 @@
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-info__label {
+  color: $primary-text-color;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  display: block;
+  margin-bottom: 4px;
+}
+
+.input-group-absolute {
+  position: relative;
+
+  &__input {
+    width: 370px;
+    height: 40px;
+    padding-left: 42px;
+    @include bordered(1px, $form-border-color);
+    border-radius: 4px;
+    outline: none;
+    transition: border $transition-duration $timing-function;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    fill: $primary-title-text-color;
+    transition: fill $transition-duration $timing-function;
+  }
+
+  &__input:hover + &__icon,
+  &__input:focus + &__icon {
+    fill: $accent-color;
+  }
+}
+
+.comments-field {
+  margin-bottom: 20px;
+}
+
+.form-info__comments {
+  display: block;
+  width: 370px;
+  height: 120px;
+  padding: 12px 16px;
+  @include bordered(1px, $form-border-color);
+  border-radius: 4px;
+  outline: none;
+  transition: border $transition-duration $timing-function;
+
+  &::placeholder {
+    color: $fourth-text-color;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+}
+
+.input-group-absolute__input:hover,
+.input-group-absolute__input:focus,
+.form-info__comments:hover,
+.form-info__comments:focus {
+  border: 1px solid $accent-color;
+}
+
+.checkbox-field {
+  margin-bottom: 30px;
+}
+
+.form-info__label-agree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-info__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-info__icon-agree {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 5px;
+
+  @include bordered(2px, $primary-title-text-color);
+  border-radius: 4px;
+
+  transition: background-color $transition-duration $timing-function,
+    background-image $transition-duration $timing-function;
+}
+
+.form-info__checkbox:checked + .form-info__icon-agree {
+  border-color: transparent;
+  background-color: $accent-color;
+  background-image: url('../images/icon-check.svg');
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.form-info__text-agree {
+  color: $primary-text-color;
+
+  font-size: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.form-info__agreement {
+  color: $accent-color;
+  text-decoration-line: underline;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    min-height: 581px;
+  }
+
+  .form-info__label,
+  .form-info__text-agree {
+    font-size: 14px;
+  }
+
+  .input-group-absolute__input,
+  .form-info__comments {
+    width: 448px;
+  }
+}

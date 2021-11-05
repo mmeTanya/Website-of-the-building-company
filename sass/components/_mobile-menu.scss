@@ -1,0 +1,119 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  fill: $primary-title-text-color;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: $accent-color;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: $white-color;
+  z-index: 997;
+
+  transform: translateX(-100%);
+  transition: transform 250ms ease-in-out;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  & .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  height: 100%;
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: $primary-title-text-color;
+
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
+    &--current {
+      color: $accent-color;
+    }
+  }
+
+  &__contact-link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.172;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    &:hover,
+    &:focus {
+      font-size: 34px;
+      color: $accent-color;
+    }
+  }
+
+  &__contact {
+    margin-bottom: 64px;
+  }
+
+  &__social-list {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__social-item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.mobile-menu__social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+
+  &--line::after {
+    content: '';
+    width: 22px;
+    height: 0;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin-left: 10px;
+  }
+}

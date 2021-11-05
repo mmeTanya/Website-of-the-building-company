@@ -1,0 +1,47 @@
+body {
+  background-color: $primary-background-color;
+  color: $primary-text-color;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  min-width: 320px;
+  
+}
+
+.union{
+background: linear-gradient(90deg, rgba(180,183,183,0.9588877787443102) 35%, rgba(29,33,33,1) 100%);
+}

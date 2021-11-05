@@ -1,0 +1,39 @@
+.contact {
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__icon {
+    padding: 0;
+    border: 0;
+    margin-right: 10px;
+  }
+
+  &__link {
+    color: #fe8240;
+    fill: #fe8240;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+
+    display: flex;
+    align-items: center;
+    transition: color $transition-duration $timing-function, fill $transition-duration $timing-function;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      fill: #ffffff;
+    }
+  }
+}

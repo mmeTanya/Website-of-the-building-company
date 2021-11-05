@@ -1,0 +1,26 @@
+.page-footer {
+    background-color: #0b2125;
+
+
+  &__container {
+    text-align: center;
+    padding: 70px 180px 70px 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: start;
+  }
+
+  .join-us {
+    margin-left: 70px;
+  }
+  .subscribe__place {
+      display: flex;
+      align-items: center;
+    }
+  }

@@ -1,0 +1,39 @@
+.contact-container {
+  @media screen and (max-width: 1199px){
+  margin-bottom: 70px;
+}
+}
+
+.page-footer__contact-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.page-footer__location {
+  color: $primary-background-color;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+}
+
+.page-footer__contact-link {
+  color: $secondary-text-color;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  transition: color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+        color: #fe8240;
+
+  }
+}

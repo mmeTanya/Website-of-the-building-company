@@ -1,0 +1,48 @@
+.join-us {
+  text-align: center;
+
+  &__title {
+    color: $white-color;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 50px;
+  }
+
+  &__social-list {
+    display: flex;
+    justify-content: center;
+
+  }
+  &__social-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.join-us__social-item {
+  width: 44px;
+  height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.join-us__social-link {
+  @extend %social-link;
+  fill: $white-color;
+  background-color: $icons-background-color;
+
+  transition: background-color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: #fe8240;
+
+  }
+}

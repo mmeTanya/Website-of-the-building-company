@@ -1,0 +1,14 @@
+.our-projects {
+  padding: 60px 0;
+}
+
+.projects-menu {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+
+  &__item {
+    margin: 0 8px 15px 0;
+  }
+}
