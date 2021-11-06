@@ -1,6 +1,13 @@
 .page-header {
   border-bottom: 1px solid #73797a;
   background-color: #0b2125;
+  position: fixed;
+  width: 100%;
+  max-width: 1600px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.92;
 
   &__container {
     display: flex;

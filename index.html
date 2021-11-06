@@ -14,7 +14,7 @@
 <body>
     <header class="page-header">
         <div class="page-header__container container">
-        <a href="index.html" class="logo"> <span class="logo--accent">The</span>Builder</a>
+        <a href="index.html" class="logo page-header__logo"> <span class="logo--accent">The</span>Builder</a>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg width="24" height="16">
             <use href="./images/icons.svg#icon-menu-open"></use>
@@ -23,8 +23,8 @@
             <nav class="nav">
         <ul class="nav__list">
                 <li class="nav__item"><a href="index.html" class="nav__link nav__link--current">Про компанію</a></li>
-                <li class="nav__item"><a href="works.html" class="nav__link">Види робіт</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
+                <li class="nav__item"><a href="projects.html" class="nav__link">Види робіт</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Контакти</a></li>
             </ul>
         </nav>
         <ul class="contact">
@@ -55,37 +55,35 @@
           <div class="mobile-menu">
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link mobile-menu__link--current">Про компанію</a></li>
-            <li class="mobile-menu__item"><a href="works.html" class="mobile-menu__link">Види робіт</a></li>
-            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
+            <li class="mobile-menu__item"><a href="projects.html" class="mobile-menu__link">Види робіт</a></li>
+            <li class="mobile-menu__item"><a href="contact.html" class="mobile-menu__link">Контакти</a></li>
           </ul>
-          <div class="mobile-menu__contact-info">
-          <ul class="mobile-menu__contact">
-            <li class="mobile-menu__item"><a href="tel:+380665328831" class="mobile-menu__contact-link">
-                <span>+38 066 532 88 31</span>
-              </a>
-            </li>
-            <li class="mobile-menu__item"><a href="mailto:info@devstudio.com" class="mobile-menu__contact-link">
+          <ul class="mobile-menu__contact-info">
+            <li class="mobile-menu__contact-item"><a href="mailto:info@devstudio.com" class="mobile-menu__contact-link">
+                <svg class="contact__icon" width="24" height="18">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
                 <span>info@devstudio.com</span>
               </a>
             </li>
-          </ul>
-          <ul class="mobile-menu__social-list">
-            <li class="mobile-menu__social-item"><a href="" class="mobile-menu__social-link mobile-menu__social-link--line">Instagram</a></li>
-            <li class="mobile-menu__social-item"><a href="" class="mobile-menu__social-link mobile-menu__social-link--line">Twitter</a></li>
-            <li class="mobile-menu__social-item"><a href="" class="mobile-menu__social-link mobile-menu__social-link--line">Facebook</a></li>
-            <li class="mobile-menu__social-item"><a href="" class="mobile-menu__social-link">LinkedIn</a></li>
-          </ul>
-          </div>
+            <li class="mobile-menu__contact-item"><a href="tel:+380665328831" class="mobile-menu__contact-link">
+                <svg class="contact__icon" width="15" height="24">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                <span>+38 066 532 88 31</span>
+              </a>
+              </li>
+              </ul>
         </div>
         </div>
 
     </header>
-        <main>
+        <main class="main">
             <section class="hero">
               <img class="hero__image" src="./images/hero.jpg" alt="" max-width="1600" />
                 <div class="container">
                     <h1 class="hero__title">Ремонтно-будівельна <br> компанія <span class="logo hero__logo"> <span class="hero__logo--accent logo--accent">The</span>Builder</span> <br> Ваш надійний партнер</h1>
-                    <a class="hero__nav-link">Детальніше</a>
+                    <a class="hero__nav-link" href="projects.html">Детальніше</a>
             </section>
             <div class="union">
             <section class="info">
@@ -252,21 +250,7 @@
                 <li class="join-us__social-item">
                   <a class="join-us__social-link" href="">
                     <svg class="join-us__social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="join-us__social-item">
-                  <a class="join-us__social-link" href="">
-                    <svg class="join-us__social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="join-us__social-item">
-                  <a class="join-us__social-link" href="">
-                    <svg class="join-us__social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin1"></use>
                     </svg>
                   </a>
                 </li>

@@ -23,7 +23,15 @@
   }
 }
 
+.page-header__logo{
+  @media screen and (max-width: 770px){
+  padding: 24px 0 25px;
+}
+}
+
 .page-footer__logo {
   color: $white-color;
   padding: 0;
 }
+
+

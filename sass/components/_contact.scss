@@ -1,0 +1,80 @@
+.contacts-section {
+  padding: 70px;
+  background: linear-gradient(
+    90deg,
+    rgba(187, 213, 213, 0.9588877787443102) 35%,
+    rgba(87, 96, 95, 1) 100%
+  );
+  @media screen and (max-width: 770px) {
+    padding: 70px 15px;
+  }
+
+  & .container {
+    @media screen and (min-width: 770px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    margin: 0 30px 70px 0;
+    width: calc((100% - 4 * 30px) / 2);
+  }
+
+  &__title {
+    color: #000;
+
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+    }
+  }
+  &__text {
+    color: #000;
+    font-size: 18px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    @media screen and (min-width: 900px) {
+      font-size: 21px;
+    }
+  }
+
+  &__contact-item {
+    margin-bottom: 30px;
+  }
+
+  &__contact-link {
+    font-weight: 500;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    &:hover,
+    &:focus {
+      font-size: 18px;
+      color: #fe8240;
+    }
+    @media screen and (min-width: 770px) {
+      font-size: 25px;
+      &:hover,
+      &:focus {
+        font-size: 30px;
+        color: #fe8240;
+      }
+    }
+  }
+
+  &__map {
+    margin-top: 30px;
+    @media screen and (min-width: 770px) {
+      width: 650px;
+      height: 470px;
+    }
+  }
+}

@@ -1,90 +1,119 @@
 .work {
-padding: 90px 50px;
+  padding: 90px 50px;
 
-  & .container{
-  display: flex;
-  align-items: center;
+  & .container {
+    display: flex;
+    align-items: center;
   }
 
   &__title {
     color: #000;
 
     font-weight: bold;
-    font-size: 38px;
+    font-size: 35px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      font-size: 38px;
+    }
   }
 
   &__list {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-left: auto;
     height: 100%;
+    @media screen and (min-width: 820px) {
+      flex-direction: row;
+    }
   }
 
   &__item {
-    width: 200px;
-    padding-top: 120px;
-    margin-left: 30px;
+    width: 150px;
+    margin-bottom: 20px;
 
-    &:first-child{
-      padding-top: 0;
+    @media screen and (min-width: 820px) {
+      margin-left: 20px;
+      margin-bottom: 0;
     }
 
-    &:last-child{
-      padding-top: 270px;
+    @media screen and (min-width: 1200px) {
+      width: 250px;
+      margin-left: 30px;
+    }
+
+    &:nth-last-child(2) {
+      @media screen and (min-width: 820px) {
+        padding-top: 120px;
+      }
+    }
+
+    &:last-child {
+      @media screen and (min-width: 820px) {
+        padding-top: 270px;
+      }
     }
   }
 
   &__overlay {
     width: 100%;
-    height: 200px;
+    height: 150px;
     background-color: #a7bdbd;
     border: 3px solid #2a3b3b;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    &:hover,
-  &:focus {
-    border: 3px solid #fe8240;
-     box-shadow: 1px 4px 6px #fe8240 ;
-  }
 
+    @media screen and (min-width: 1200px) {
+      height: 250px;
+    }
+
+    &:hover,
+    &:focus {
+      border: 3px solid #fe8240;
+      box-shadow: 1px 4px 6px #fe8240;
+    }
   }
 
   &__name {
     color: #000;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     padding-bottom: 20px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      font-size: 25px;
+    }
   }
 
   &__button {
-  @extend %button;
+    @extend %button;
     color: #313b3b;
-  background-color: #a0b5b5;
+    background-color: #a0b5b5;
 
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
 
-  width: 150px;
-  height: 30px;
+    width: 120px;
+    height: 30px;
 
-  margin: 0 auto;
-  transition: background-color $transition-duration $timing-function;
+    margin: 0 auto;
+    transition: background-color $transition-duration $timing-function;
+    @media screen and (min-width: 1200px) {
+      width: 150px;
+    }
 
-  &:hover,
-  &:focus {
-    color: #ffffff;
-    background-color: #577c7c;
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: #577c7c;
+    }
   }
-}
 }

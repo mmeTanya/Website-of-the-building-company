@@ -1,12 +1,16 @@
 .contact {
   margin-left: auto;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 770px) {
     display: none;
   }
 
+  @media screen and (min-width: 1500px) {
+    margin-left: 658px;
+  }
+
   &__item:not(:last-child) {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 770px) {
       margin-bottom: 10px;
     }
   }

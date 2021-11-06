@@ -1,6 +1,10 @@
 .qualities {
   background-color: #fff;
-  padding: 70px;
+  padding: 70px 30px;
+
+   @media screen and (min-width: 770px){
+     padding: 70px;
+   }
 
   &__title {
    color: #000;
