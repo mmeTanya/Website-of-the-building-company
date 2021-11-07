@@ -312,14 +312,6 @@ address {
   color: #fe8240;
   fill: #fe8240;
 }
-@media screen and (min-width: 500px) {
-  .mobile-menu__contact-link {
-    font-size: 18px;
-  }
-  .mobile-menu__contact-link:hover, .mobile-menu__contact-link:focus {
-    font-size: 21px;
-  }
-}
 .mobile-menu__contact {
   margin-bottom: 64px;
 }
