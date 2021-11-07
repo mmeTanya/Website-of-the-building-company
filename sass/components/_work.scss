@@ -46,7 +46,7 @@
   }
 
   &__item {
-    width: 129px;
+    width: 131px;
     margin-bottom: 20px;
 
     @media screen and (min-width: 920px) {
@@ -80,7 +80,7 @@
 
   &__overlay {
     width: 100%;
-    height: 129px;
+    height: 131px;
     background-color: #a7bdbd;
     border: 3px solid #2a3b3b;
     display: flex;
@@ -89,7 +89,7 @@
     align-items: center;
 
     @media screen and (min-width: 920px){
-      height: 150px;
+      height: 180px;
     }
 
     @media screen and (min-width: 1200px) {

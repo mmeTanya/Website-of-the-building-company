@@ -581,7 +581,7 @@ address {
   width: 85%;
   top: 50%;
   left: 50%;
-  padding: 38px 7px;
+  padding: 38px 9px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -755,7 +755,7 @@ address {
   }
 }
 .work__item {
-  width: 129px;
+  width: 131px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 920px) {
@@ -788,7 +788,7 @@ address {
 }
 .work__overlay {
   width: 100%;
-  height: 129px;
+  height: 131px;
   background-color: #a7bdbd;
   border: 3px solid #2a3b3b;
   display: -webkit-box;
@@ -807,7 +807,7 @@ address {
 }
 @media screen and (min-width: 920px) {
   .work__overlay {
-    height: 150px;
+    height: 180px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1077,6 +1077,9 @@ address {
   background-color: #fe8240;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.projects__list {
+  padding: 0;
 }
 .projects__item {
   color: #000;
