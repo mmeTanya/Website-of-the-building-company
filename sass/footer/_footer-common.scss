@@ -4,7 +4,7 @@
 
   &__container {
     text-align: center;
-    padding: 50px 180px 50px 70px;
+    padding: 50px 0;
   }
 }
 
@@ -14,6 +14,7 @@
     align-items: baseline;
     justify-content: space-between;
     text-align: start;
+    padding: 50px 180px 50px 70px;
   }
 
   .join-us {

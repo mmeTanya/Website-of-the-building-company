@@ -1,31 +1,35 @@
 .info {
-  padding: 70px 55px 90px;
+  padding: 50px 15px;
   @media screen and (min-width: 770px) {
-    padding: 70px 90px 90px;
+    padding: 50px 70px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 70px 150px 90px;
+    padding: 70px 150px;
   }
 
   &__title {
     color: #000;
 
     font-weight: bold;
-    font-size: 35px;
+    font-size: 25px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
-    @media screen and (min-width: 770px) {
+    @media screen and (min-width: 900px) {
       font-size: 38px;
+      margin-bottom: 30px;
     }
   }
 
   &__description {
     color: #fff;
-    font-size: 27px;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: center;
+    @media screen and (min-width: 900px) {
+      font-size: 21px;
+    }
   }
 }

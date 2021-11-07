@@ -375,11 +375,16 @@ address {
 
 .hero {
   max-width: 1600px;
-  height: 857px;
+  height: 570px;
   background: -webkit-gradient(linear, left top, right top, from(rgba(94, 94, 94, 0.9588877787)), to(rgba(0, 0, 0, 0.9840978628)));
   background: linear-gradient(90deg, rgba(94, 94, 94, 0.9588877787) 0%, rgba(0, 0, 0, 0.9840978628) 100%);
   position: relative;
   z-index: 0;
+}
+@media screen and (min-width: 770px) {
+  .hero {
+    height: 857px;
+  }
 }
 .hero__image {
   width: 100%;
@@ -423,7 +428,7 @@ address {
 .hero__title {
   color: #000;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 27px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.06em;
@@ -439,7 +444,7 @@ address {
 .hero__nav-link {
   display: block;
   color: #a7a7a7;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.15;
   letter-spacing: 0.02em;
   padding-right: 50px;
@@ -636,42 +641,58 @@ address {
 }
 
 .info {
-  padding: 70px 55px 90px;
+  padding: 50px 15px;
 }
 @media screen and (min-width: 770px) {
   .info {
-    padding: 70px 90px 90px;
+    padding: 50px 70px;
   }
 }
 @media screen and (min-width: 1200px) {
   .info {
-    padding: 70px 150px 90px;
+    padding: 70px 150px;
   }
 }
 .info__title {
   color: #000;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 25px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 900px) {
   .info__title {
     font-size: 38px;
+    margin-bottom: 30px;
   }
 }
 .info__description {
   color: #fff;
-  font-size: 27px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-align: center;
 }
+@media screen and (min-width: 900px) {
+  .info__description {
+    font-size: 21px;
+  }
+}
 
 .work {
-  padding: 90px 50px;
+  padding: 50px 5px;
+}
+@media screen and (min-width: 770px) {
+  .work {
+    padding: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    padding: 70px 61px;
+  }
 }
 .work .container {
   display: -webkit-box;
@@ -684,11 +705,11 @@ address {
 .work__title {
   color: #000;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 25px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
   text-align: center;
+  margin-right: 15px;
 }
 @media screen and (min-width: 1200px) {
   .work__title {
@@ -810,24 +831,26 @@ address {
 
 .qualities {
   background-color: #fff;
-  padding: 70px 30px;
+  padding: 70px 30px 0;
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 900px) {
   .qualities {
-    padding: 70px;
+    padding: 70px 70px 30px;
   }
 }
 .qualities__title {
   color: #000;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 25px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   text-align: center;
 }
-.qualities__list {
-  list-style-type: square;
+@media screen and (min-width: 900px) {
+  .qualities__title {
+    font-size: 38px;
+  }
 }
 .qualities__item {
   margin-bottom: 70px;
@@ -845,22 +868,33 @@ address {
   text-align: center;
 }
 .qualities__name {
-  min-width: 210px;
+  min-width: 100px;
   padding: 7px auto;
   margin-right: 70px;
   text-align: center;
   color: #000;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: center;
 }
+@media screen and (min-width: 900px) {
+  .qualities__name {
+    font-size: 25px;
+    min-width: 210px;
+  }
+}
 .qualities__descr {
   color: #323434;
-  font-size: 21px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 900px) {
+  .qualities__descr {
+    font-size: 21px;
+  }
 }
 
 .page-footer {
@@ -868,7 +902,7 @@ address {
 }
 .page-footer__container {
   text-align: center;
-  padding: 50px 180px 50px 70px;
+  padding: 50px 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -883,6 +917,7 @@ address {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: start;
+    padding: 50px 180px 50px 70px;
   }
 
   .join-us {
@@ -1019,10 +1054,15 @@ address {
 .projects__item {
   color: #000;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1100px) {
+  .projects__item {
+    font-size: 18px;
+  }
 }
 
 .projects-menu {
@@ -1041,7 +1081,8 @@ address {
 }
 
 .contacts-section {
-  padding: 70px;
+  padding: 110px 50px;
+  text-align: center;
   background: -webkit-gradient(linear, left top, right top, color-stop(35%, rgba(187, 213, 213, 0.9588877787)), to(#57605f));
   background: linear-gradient(90deg, rgba(187, 213, 213, 0.9588877787) 35%, #57605f 100%);
 }
@@ -1057,11 +1098,23 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .contacts-section__item {
-  margin: 0 30px 70px 0;
-  width: calc((100% - 4 * 30px) / 2);
+  text-align: center;
+  margin: 100px auto;
+}
+@media screen and (min-width: 770px) {
+  .contacts-section__item {
+    margin: 0 30px 200px 0;
+    width: calc((100% - 4 * 30px) / 2);
+  }
 }
 .contacts-section__title {
   color: #000;
@@ -1086,14 +1139,13 @@ address {
 }
 @media screen and (min-width: 900px) {
   .contacts-section__text {
-    font-size: 21px;
+    font-size: 25px;
   }
 }
 .contacts-section__contact-item {
   margin-bottom: 30px;
 }
 .contacts-section__contact-link {
-  font-weight: 500;
   color: #000;
   font-size: 16px;
   line-height: 1.14;
@@ -1114,11 +1166,11 @@ address {
   }
 }
 .contacts-section__map {
-  margin-top: 30px;
+  margin: 0 auto;
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 670px) {
   .contacts-section__map {
-    width: 650px;
-    height: 470px;
+    width: 600px;
+    height: 450px;
   }
 }/*# sourceMappingURL=main.css.map */
