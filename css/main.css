@@ -27,6 +27,7 @@ body {
   font-family: Roboto, Arial, sans-serif;
   font-size: 14px;
   max-width: 1600px;
+  min-width: 320px;
   margin: 0;
 }
 
@@ -65,7 +66,6 @@ address {
 
 .container {
   padding: 0 30px;
-  min-width: 320px;
 }
 
 .union {
@@ -588,6 +588,7 @@ address {
   background-color: #a7bdbd;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
+  overflow-y: scroll;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -647,7 +648,7 @@ address {
 }
 
 .info {
-  padding: 50px 0;
+  padding: 50px 3px;
 }
 @media screen and (min-width: 770px) {
   .info {
@@ -720,7 +721,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-right: 15px;
+  margin-right: auto;
 }
 @media screen and (min-width: 820px) {
   .work__title {
@@ -743,10 +744,9 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: auto;
   height: 100%;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 670px) {
   .work__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -758,10 +758,10 @@ address {
   width: 129px;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 920px) {
   .work__item {
     margin-left: 20px;
-    width: 150px;
+    width: 180px;
     margin-bottom: 0;
   }
 }
@@ -771,12 +771,17 @@ address {
     margin-left: 30px;
   }
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 670px) {
   .work__item:nth-last-child(2) {
     padding-top: 120px;
   }
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 670px) {
+  .work__item:last-child {
+    padding-top: 241px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .work__item:last-child {
     padding-top: 270px;
   }
@@ -800,9 +805,9 @@ address {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 920px) {
   .work__overlay {
-    height: 180px;
+    height: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -818,7 +823,7 @@ address {
 .work__name {
   color: #000;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   padding-bottom: 20px;

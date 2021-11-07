@@ -34,6 +34,7 @@
 
   background-color: #a7bdbd;
   transform: translate(-50%, -50%) scale(1);
+  overflow-y: scroll;
   transition: transform $transition-duration $timing-function;
   @media screen and (min-width: 1200px) {
     width: 50%;

@@ -5,6 +5,7 @@ body {
   font-family: Roboto, Arial, sans-serif;
   font-size: 14px;
   max-width: 1600px;
+  min-width: 320px;
   margin: 0;
 
 }
@@ -43,7 +44,6 @@ address {
 
 .container {
   padding: 0 30px;
-  min-width: 320px;
   
 }
 

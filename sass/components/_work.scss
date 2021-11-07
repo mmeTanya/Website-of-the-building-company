@@ -23,10 +23,11 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-right: 15px;
+    margin-right: auto;
 
      @media screen and (min-width: 820px) {
  font-size: 27px;
+
      }
     
     @media screen and (min-width: 1200px) {
@@ -38,9 +39,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: auto;
     height: 100%;
-    @media screen and (min-width: 820px) {
+    @media screen and (min-width: 670px) {
       flex-direction: row;
     }
   }
@@ -49,9 +49,9 @@
     width: 129px;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 820px) {
+    @media screen and (min-width: 920px) {
       margin-left: 20px;
-       width: 150px;
+       width: 180px;
       margin-bottom: 0;
     }
 
@@ -59,17 +59,22 @@
       width: 250px;
       margin-left: 30px;
     }
-
+    
     &:nth-last-child(2) {
-      @media screen and (min-width: 820px) {
+      @media screen and (min-width: 670px) {
         padding-top: 120px;
       }
     }
 
     &:last-child {
-      @media screen and (min-width: 820px) {
-        padding-top: 270px;
+      @media screen and (min-width: 670px) {
+        padding-top: 241px;
       }
+
+       @media screen and (min-width: 1200px){
+       padding-top: 270px;
+     }
+
     }
   }
 
@@ -83,8 +88,8 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (min-width: 820px){
-      height: 180px;
+    @media screen and (min-width: 920px){
+      height: 150px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -101,7 +106,7 @@
   &__name {
     color: #000;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     padding-bottom: 20px;
