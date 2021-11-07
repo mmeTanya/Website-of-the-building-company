@@ -26,7 +26,7 @@
     fill: #fe8240;
 
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
 
@@ -39,5 +39,8 @@
       color: #ffffff;
       fill: #ffffff;
     }
+    @media screen and (max-width: 900px) {
+    font-size: 9px;
+  }
   }
 }

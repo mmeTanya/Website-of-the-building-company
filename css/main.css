@@ -113,7 +113,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .nav {
-    margin-left: 90px;
+    margin-left: 70px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -187,7 +187,7 @@ address {
   color: #fe8240;
   fill: #fe8240;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
   display: -webkit-box;
@@ -202,6 +202,11 @@ address {
 .contact__link:hover, .contact__link:focus {
   color: #ffffff;
   fill: #ffffff;
+}
+@media screen and (max-width: 900px) {
+  .contact__link {
+    font-size: 9px;
+  }
 }
 
 .menu-toggle {
@@ -297,16 +302,23 @@ address {
 }
 .mobile-menu__contact-link {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 14px;
   line-height: 1.172;
   letter-spacing: 0.02em;
   color: #000;
   fill: #000;
 }
 .mobile-menu__contact-link:hover, .mobile-menu__contact-link:focus {
-  font-size: 35px;
   color: #fe8240;
   fill: #fe8240;
+}
+@media screen and (min-width: 500px) {
+  .mobile-menu__contact-link {
+    font-size: 18px;
+  }
+  .mobile-menu__contact-link:hover, .mobile-menu__contact-link:focus {
+    font-size: 21px;
+  }
 }
 .mobile-menu__contact {
   margin-bottom: 64px;
