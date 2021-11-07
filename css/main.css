@@ -280,7 +280,7 @@ address {
 }
 .mobile-menu__link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: #0b2125;
@@ -296,7 +296,7 @@ address {
 }
 .mobile-menu__contact-link {
   font-weight: 500;
-  font-size: 28px;
+  font-size: 25px;
   line-height: 1.172;
   letter-spacing: 0.02em;
   color: #000;
@@ -600,7 +600,7 @@ address {
 }
 .modal__text {
   color: #000;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.3;
   letter-spacing: 0.03em;
   text-align: justify;
