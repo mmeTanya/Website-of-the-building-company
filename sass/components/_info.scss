@@ -1,28 +1,12 @@
 .info {
-  padding: 50px 3px;
+  padding: 70px 3px;
   @media screen and (min-width: 770px) {
-    padding: 50px 70px;
+    padding: 70px 70px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 70px 150px;
+    padding: 90px 150px;
   }
 
-  
-
-  &__title {
-    color: #000;
-
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
-    text-align: center;
-    @media screen and (min-width: 900px) {
-      font-size: 38px;
-      margin-bottom: 30px;
-    }
-  }
 
   &__description {
     color: #fff;
@@ -31,7 +15,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     @media screen and (min-width: 900px) {
-      font-size: 21px;
+      font-size: 23px;
     }
   }
 }

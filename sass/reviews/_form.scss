@@ -152,7 +152,7 @@ width: 448px;
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-right: 5px;
+  margin-right: 10px;
 
   @include bordered(2px, $primary-title-text-color);
   border-radius: 4px;
@@ -172,10 +172,11 @@ width: 448px;
 .form__text-agree {
   font-size: 8px;
   color: $primary-title-text-color;
+   line-height: 1.2;
+  letter-spacing: 0.03em;
+
   @media screen and (min-width: 570px) {
 font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
       }
 }
 
