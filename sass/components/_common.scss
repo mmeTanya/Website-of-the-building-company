@@ -54,3 +54,18 @@ background: linear-gradient(90deg, rgba(180,183,183,0.9588877787443102) 35%, rgb
 .hidden {
   display: none
 }
+
+@keyframes changeBgColor {
+  0% {
+    background-color: #feb56c;
+  }
+
+  50% {
+    background-color: deeppink;
+  }
+
+  100% {
+    background-color: deepskyblue;
+  }
+}
+

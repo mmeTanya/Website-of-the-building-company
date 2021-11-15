@@ -171,17 +171,12 @@ width: 448px;
 
 .form__text-agree {
   font-size: 8px;
+  color: $primary-title-text-color;
   @media screen and (min-width: 570px) {
 font-size: 14px;
-color: $primary-title-text-color;
   line-height: 1.71;
   letter-spacing: 0.03em;
       }
-}
-
-.form__agreement {
-  color: $accent-color;
-  text-decoration-line: underline;
 }
 
 @media screen and (min-width: 900px) {
